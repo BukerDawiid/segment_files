@@ -47,6 +47,11 @@
     "twclid": "twclid"
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -86,6 +91,11 @@
     "twclid": "twclid"
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -125,6 +135,11 @@
     "twclid": "twclid"
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -192,6 +207,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -254,6 +274,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -318,6 +343,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -377,6 +407,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -441,6 +476,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -499,6 +539,11 @@
     "twclid": "twclid"
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -551,6 +596,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -603,6 +653,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -655,6 +710,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -722,6 +782,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -760,6 +825,11 @@
     "twclid": "twclid"
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -797,6 +867,11 @@
     "twclid": "twclid"
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -852,6 +927,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -905,6 +985,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -958,6 +1043,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1011,6 +1101,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1066,6 +1161,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1118,6 +1218,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1170,6 +1275,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1222,6 +1332,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1290,6 +1405,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1339,6 +1459,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1389,6 +1514,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1439,6 +1569,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1492,6 +1627,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1561,6 +1701,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",
@@ -1633,6 +1778,11 @@
     ]
   },
   "context": {
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "page": {
       "path": "page_path",
       "url": "page_location",

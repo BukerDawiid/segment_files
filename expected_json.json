@@ -1,0 +1,1646 @@
+///////// Started SEGMENT EVENTS
+
+///////// Started HOME
+// GA4 NAME search_Started
+// SEGMENT NAME Search Started
+// Description: Tracks the Started of a flight search using the selected criteria.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Search Started",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "passenger_adult_count": "adult_count",
+    "passenger_child_count": "child_count",
+    "passenger_baby_count": "baby_count",
+    "pnr_total_number_of_passengers": "pax_number",
+    "flight_type": "flight_type",
+    "flight_route": "departure_flight",
+    "flight_route_return": "return_flight",
+    "route_origin_departure": "departureoriginstationiata",
+    "route_arrival_departure": "departurearrivalstationiata",
+    "route_origin_return": "returnoriginstationiata",
+    "route_arrival_return": "returnarrivalstationiata",
+    "departure_date": "departuredate",
+    "return_date": "returndate",
+    "trip_duration_days": "trip_duration",
+    "days_in_advance": "days_in_advance",
+    "pnr_countries_visited": "country_route",
+    "product_id": "item_id",
+    "extra_seat": "extra_seat",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME view_promotion
+// SEGMENT NAME Promotion Viewed
+// Description: Tracks a promotion impression when it is shown to the user.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Promotion Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "creative": "creative_name",
+    "name": "promo_name",
+    "promo_type": "promo_type",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME select_promotion
+// SEGMENT NAME Promotion Clicked
+// Description: Tracks the click or selection of a promotion when the user interacts with it.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Promotion Clicked",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "creative": "creative_name",
+    "name": "promo_name",
+    "promo_type": "promo_type",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+////// END HOME
+
+///// Started AVAILABILITY
+// GA4 NAME view_item_list (flights)
+// SEGMENT NAME Flights Product List Viewed
+// Description: Tracks the display of flight results when availability is loaded or refreshed; in desktop it is sent once, and in mobile once per view/segment shown.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Flights Product List Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "currency": "ecommerce.currency",
+    "list_id": "ecommerce.item_list_id",
+    "item_list_name": "ecommerce.item_list_name",
+    "value": "ecommerce.value",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "departure_date": "flight_date",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "journey_type": "journey_type",
+        "pnr_countries_visited": "country_route",
+        "flight_has_connections": "connections",
+        "connection_station_iata": "connection_station_iata",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME select_item (flights)
+// SEGMENT NAME Flights Item Selected
+// Description: Tracks flight selection when the user clicks an option within the results.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Flights Item Selected",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "departure_date": "flight_date",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "journey_type": "journey_type",
+        "pnr_countries_visited": "country_route",
+        "flight_has_connections": "connections",
+        "connection_station_iata": "connection_station_iata",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME view_item (flights)
+// SEGMENT NAME Flights Item Viewed
+// Description: Tracks the display of the selected itinerary when the user completes flight selection and sees the trip summary or details.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Flights Item Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "flight_type": "ecommerce.flight_type",
+    "trip_duration_days": "ecommerce.trip_duration",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "departure_date": "flight_date",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "journey_type": "journey_type",
+        "pnr_countries_visited": "country_route",
+        "flight_has_connections": "connections",
+        "connection_station_iata": "connection_station_iata",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME block_price (flights)
+// SEGMENT NAME Flights Block Price
+// Description: Tracks the click on price lock for a selected fare; desktop only, and referred to as on hold in the PDF.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Flights Block Price",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "value": "value",
+    "currency": "currency",
+    "flight_type": "flight_type",
+    "trip_duration_days": "trip_duration",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "journey_type": "journey_type",
+        "departure_date": "flight_date",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "pnr_countries_visited": "country_route",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_has_connections": "connections"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME Delete (flights)
+// SEGMENT NAME Flights Delete
+// Description: Tracks the removal of flights and, when applicable, bundles from the cart when the user deletes the selected option.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Flights Delete",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "flight_type": "ecommerce.flight_type",
+    "trip_duration_days": "ecommerce.trip_duration",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "journey_type": "journey_type",
+        "departure_date": "flight_date",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "pnr_countries_visited": "country_route",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_has_connections": "connections"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME modify_flight
+// SEGMENT NAME Flights Modify
+// Description: Tracks the intent to change already selected flights when the user clicks "modify"; going back does not count as modify_flight.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Flights Modify",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "flight_type": "flight_type",
+    "trip_duration_days": "trip_duration",
+    "value": "value",
+    "currency": "currency",
+    "product_id": "item_id",
+    "pnr_countries_visited": "country_route",
+    "flight_route": "departure_flight",
+    "flight_route_return": "return_flight",
+    "departure_date": "departuredate",
+    "return_date": "returndate",
+    "route_origin_departure": "departureoriginstationiata",
+    "route_arrival_departure": "departurearrivalstationiata",
+    "route_origin_return": "returnoriginstationiata",
+    "route_arrival_return": "returnarrivalstationiata",
+    "departure_origin_flight_time": "departure_origin_flight_time",
+    "departure_arrival_flight_time": "departure_arrival_flight_time",
+    "return_origin_flight_time": "return_origin_flight_time",
+    "return_arrival_flight_time": "return_arrival_flight_time",
+    "departure_price": "departure_price",
+    "return_price": "return_price",
+    "departure_connections": "departure_connections",
+    "return_connections": "return_connections",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME view_item_list (bundle)
+// SEGMENT NAME Product List Viewed
+// Description: Tracks the display of bundles when the available options are shown to the user.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product List Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME select_item (bundle)
+// SEGMENT NAME Product Clicked
+// Description: Tracks bundle selection when the user clicks it; for round trips it may include one item per segment.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Clicked",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME add_to_cart (bundle)
+// SEGMENT NAME Product Added
+// Description: Tracks the addition of bundles to the cart when progressing with "Next", as long as at least one bundle is selected; the PDF presents this as mobile only.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Added",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+///// AVAILABILITY END
+
+///// CONTACT SECTION Started
+// GA4 NAME begin_checkout
+// SEGMENT NAME Checkout Started
+// Description: Tracks the Started of checkout when the Passenger Details Page (PDP) loads successfully.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Checkout Started",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "flight_type": "flight_type",
+    "trip_duration_days": "trip_duration",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "journey_type": "journey_type",
+        "departure_date": "flight_date",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "pnr_countries_visited": "country_route",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "flight_has_connections": "connections"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME add_passenger_info
+// SEGMENT NAME Checkout Passenger Info Added
+// Description: Tracks the successful submission of passenger information; in desktop it is sent once for all passengers, and in mobile once per passenger when "Continue" is clicked.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Checkout Passenger Info Added",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "special_needs": "special_needs",
+    "avios_has_account": "avios_account",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME add_contact_info
+// SEGMENT NAME Checkout Contact Info Added
+// Description: Tracks the successful submission of contact information when the user clicks "continue".
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Checkout Contact Info Added",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "country": "user_country",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+////// END CONTACT SECTION
+
+//////// SEATS Started
+// GA4 NAME view_item_list (seats)
+// SEGMENT NAME Product List Viewed
+// Description: Tracks the display of available seats when the map loads; one view is sent per category and, if there are multiple prices, it uses the average.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product List Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME select_item (seats)
+// SEGMENT NAME Product Clicked
+// Description: Tracks seat selection when the user clicks a seat or confirms it in the outbound/return modal.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Clicked",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME remove_from_cart (seats)
+// SEGMENT NAME Product Removed
+// Description: Tracks the removal of a previously selected seat when the user deselects it on the map; it must preserve seat ID and segment.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Removed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME add_to_cart (seats)
+// SEGMENT NAME Product Added
+// Description: Tracks the confirmed addition of seats to the cart when "Next" or "Continue" is clicked, as long as at least one seat has been assigned.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Added",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+//// END SEATS
+
+/////// Started BAGGAGE
+// GA4 NAME view_item_list (baggages)
+// SEGMENT NAME Product List Viewed
+// Description: Tracks the display of baggage options when the interface loads; in desktop it is sent once, and in mobile at least in Hand Luggage and Checked Luggage.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product List Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME select_item (baggages)
+// SEGMENT NAME Product Clicked
+// Description: Tracks the selection of a baggage option when the user clicks an available item, such as GCBG, BG20, or BG30.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Clicked",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME remove_from_cart (baggages)
+// SEGMENT NAME Product Removed
+// Description: Tracks the removal of baggage when the user returns to the step and deselects a bag that was already added.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Removed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME add_to_cart (baggages)
+// SEGMENT NAME Product Added
+// Description: Tracks the confirmed addition of baggage to the cart when "Next" or "Continue" is clicked, as long as baggage has been selected.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Added",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+///// END BAGGAGES
+
+///// Started SERVICES
+// GA4 NAME view_item_list (SERVICES)
+// SEGMENT NAME Product List Viewed
+// Description: Tracks the display of the extra services list when that page or module is shown to the user.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product List Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "ecommerce.currency",
+    "list_id": "ecommerce.item_list_id",
+    "item_list_name": "ecommerce.item_list_name",
+    "value": "ecommerce.value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "departure_date": "flight_date",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "journey_type": "journey_type",
+        "pnr_countries_visited": "country_route",
+        "flight_has_connections": "connections",
+        "connection_station_iata": "connection_station_iata",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME view_item (SERVICES)
+// SEGMENT NAME Product Viewed
+// Description: Tracks the display of the detail page for an extra service when the user opens it.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Viewed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME select_item (services)
+// SEGMENT NAME Product Clicked
+// Description: Tracks the selection of an extra service within its product page before confirmation; it must include item_variant when applicable.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Clicked",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_route": "airport_pair_order",
+        "flight_id": "flight_id"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME remove_from_cart (services)
+// SEGMENT NAME Product Removed
+// Description: Tracks the removal of an extra service when the user deselects it and confirms the change; for insurance upsell it must reflect the replacement.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Removed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_route": "airport_pair_order",
+        "flight_id": "flight_id"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+// GA4 NAME add_to_cart (services)
+// SEGMENT NAME Product Added
+// Description: Tracks the confirmed addition of an extra service to the cart when progressing with "Next" or "Continue", as long as the service remains selected.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Product Added",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+
+//// PAYMENT Started
+// GA4 NAME add_payment_info
+// SEGMENT NAME Payment Info Entered
+// Description: Tracks the successful submission of payment information when the user clicks "pay now"; for flight credit or Avios it must include the special fields.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Payment Info Entered",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "currency": "currency",
+    "value": "value",
+    "flight_type": "flight_type",
+    "trip_duration_days": "trip_duration",
+    "payment_method": "payment_type",
+    "special_payment_type": "special_payment_type", //NOT_FOUND
+    "special_payment_amount": "special_payment_amount",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "journey_type": "journey_type",
+        "departure_date": "flight_date",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "pnr_countries_visited": "country_route",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_has_connections": "connections"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+///// PAYMENT END
+
+///// CONFIRMATION Started
+// GA4 NAME purchase
+// SEGMENT NAME Order Completed
+// Description: Tracks a successfully completed purchase when the confirmation page loads after a successful payment.
+{
+  "type": "track",
+  "anonymousId": "MandatorySegment",
+  "event": "Order Completed",
+  "properties": {
+    "hashed_email": "datalayerSourceTBD",
+    "order_id": "transaction_id",
+    "value": "value",
+    "tax": "tax",
+    "coupon": "coupon",
+    "currency": "currency",
+    "flight_type": "flight_type",
+    "trip_duration_days": "trip_duration",
+    "special_payment_type": "special_payment_type",
+    "special_payment_amount": "special_payment_amount",
+    "session_id": "ga_session_id",
+    "session_number": "ga_session_number",
+    "utm_source": "utm_source",
+    "utm_medium": "utm_medium",
+    "utm_campaign": "utm_campaign",
+    "utm_term": "utm_term",
+    "utm_content": "utm_content",
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "price": "price",
+        "quantity": "quantity",
+        "flight_id": "flight_id",
+        "flight_number": "flight_number",
+        "flight_carrier": "flight_carrier",
+        "journey_type": "journey_type",
+        "departure_date": "flight_date",
+        "flight_origin_time": "origin_flight_time",
+        "flight_arrival_time": "arrival_flight_time",
+        "route_origin": "origin_station_iata",
+        "route_arrival": "arrival_station_iata",
+        "pnr_countries_visited": "country_route",
+        "flight_route": "airport_pair_order",
+        "pnr_total_number_of_passengers": "pax_number",
+        "flight_category": "flight_category",
+        "funnel_step": "funnel_step",
+        "flight_has_connections": "connections"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    }
+  }
+}
+//// CONFIRMATION END
+
+/////////////EVENTS END

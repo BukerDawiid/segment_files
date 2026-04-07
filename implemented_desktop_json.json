@@ -1,1 +1,76 @@
-
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {
+      "name": "c***",
+      "source": "source"
+    },
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "page": {
+      "path": "/es",
+      "referrer": "",
+      "search": "?gtm_debug=1775576047969&utm_source=source&utm_campaign=campaign",
+      "title": "Vueling: vuelos baratos a las principales ciudades europeas - Vueling",
+      "url": "https://www.vueling.com/es?gtm_debug=1775576047969&utm_source=source&utm_campaign=campaign"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea"
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        {
+          "brand": "Chromium",
+          "version": "146"
+        },
+        {
+          "brand": "Not-A.Brand",
+          "version": "24"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "146"
+        }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    }
+  },
+  "event": "Promotion Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775576131251-81eaea2b-1a9d-40c7-885e-365c8ce5f5ab",
+  "originalTimestamp": "2026-04-07T15:35:31.251Z",
+  "properties": {
+    "campaign": {
+      "name": "c***",
+      "source": "source"
+    },
+    "creative": "banner_big_discount",
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "name": "E*** a*** u*** v*** d*** l*** F*** d*** A***",
+    "promo_type": "",
+    "session_id": "1***",
+    "session_number": "40",
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "receivedAt": "2026-04-07T15:35:31.409Z",
+  "sentAt": "2026-04-07T15:35:31.336Z",
+  "timestamp": "2026-04-07T15:35:31.324Z",
+  "type": "track",
+  "userId": null
+}

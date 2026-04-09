@@ -1,13 +1,20 @@
+// ─────────────────────────────────────────────────────────────
+// EVENTO 1: Segment Consent Preference Updated
+// Página: /es (Home)
+// GA4: N/A
+// Descripción: Se dispara en cada carga de página. Registra las
+// preferencias de consentimiento del usuario.
+// ─────────────────────────────────────────────────────────────
 {
-  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "anonymousId": "c4a45e36-04d4-4327-a548-2def07283a6b",
   "context": {
-    "campaign": {
-      "source": "hola_don_pepito"
-    },
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
+    "campaign": {},
+    "consent": {
+      "categoryPreferences": {
+        "advertising": false,
+        "analytics": true,
+        "preferences": false
+      }
     },
     "ip": "2***.1***.1***.7***",
     "library": {
@@ -17,56 +24,1652 @@
     "locale": "en-US",
     "page": {
       "path": "/es",
-      "referrer": "",
-      "search": "?gtm_debug=1775577003208&utm_source=hola_don_pepito",
+      "referrer": "https://tagassistant.google.com/",
+      "search": "?gtm_debug=1775734073860",
       "title": "Vueling: vuelos baratos a las principales ciudades europeas - Vueling",
-      "url": "https://www.vueling.com/es?gtm_debug=1775577003208&utm_source=hola_don_pepito"
+      "url": "https://www.vueling.com/es?gtm_debug=1775734073860"
     },
     "protocols": {
-      "sourceId": "85J7WzdcpvbNvYnx1Y67ea"
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "context.categoryPreferences is required",
+          "field": "context.categoryPreferences",
+          "type": "Required"
+        },
+        {
+          "description": "properties.session_id is required",
+          "field": "properties.session_id",
+          "type": "Required"
+        },
+        {
+          "description": "properties.session_number is required",
+          "field": "properties.session_number",
+          "type": "Required"
+        }
+      ]
     },
     "timezone": "Europe/Madrid",
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
     "userAgentData": {
       "brands": [
-        {
-          "brand": "Chromium",
-          "version": "146"
-        },
-        {
-          "brand": "Not-A.Brand",
-          "version": "24"
-        },
-        {
-          "brand": "Google Chrome",
-          "version": "146"
-        }
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
       ],
       "mobile": false,
       "platform": "macOS"
     }
   },
-  "event": "Promotion Viewed",
+  "event": "Segment Consent Preference Updated",
   "integrations": {},
-  "messageId": "ajs-next-1775577037593-79fe52d1-c5b7-45a7-89ad-15f3ecb0139f",
-  "originalTimestamp": "2026-04-07T15:50:37.593Z",
+  "messageId": "ajs-next-1775734085361-f1c4a45e-3604-4483-a7e5-482def07283a",
+  "originalTimestamp": "2026-04-09T11:28:05.361Z",
   "properties": {
-    "campaign": "",
-    "creative": "banner_big_discount",
+    "categoryPreferences": {
+      "advertising": false,
+      "analytics": true,
+      "preferences": false
+    }
+  },
+  "receivedAt": "2026-04-09T11:28:05.596Z",
+  "sentAt": "2026-04-09T11:28:05.364Z",
+  "timestamp": "2026-04-09T11:28:05.593Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 2: Search Started
+// Página: /booking/flightSearch (Home – búsqueda)
+// GA4: search_started
+// Descripción: Se dispara cuando el usuario lanza una búsqueda
+// de vuelos. Viaje de ida y vuelta LCG-AAL, 1 adulto, 1 niño,
+// 1 bebé.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
     "dclid": "TEST_GADS_DISPLAY",
     "fbclid": "TEST_FBCLID",
     "gbraid": "TEST_GBRAID",
     "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
     "msclkid": "TEST_MICROSOFT_BING",
-    "name": "D*** M*** L*** P*** E***",
-    "promo_type": "VUELA DESDE 26€",
-    "session_id": "1***",
-    "session_number": "40",
+    "page": {
+      "path": "/booking/flightSearch",
+      "referrer": "",
+      "search": "",
+      "title": "Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/flightSearch"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
     "wbraid": "TEST_WBRAID_000"
   },
-  "receivedAt": "2026-04-07T15:50:37.683Z",
-  "sentAt": "2026-04-07T15:50:37.609Z",
-  "timestamp": "2026-04-07T15:50:37.667Z",
+  "event": "Search Started",
+  "integrations": {},
+  "messageId": "ajs-next-1775734545182-03994eeb-5510-4904-ba2f-fa71e2c9cbec",
+  "originalTimestamp": "2026-04-09T11:35:45.182Z",
+  "properties": {
+    "days_in_advance": 0,
+    "departure_date": "2026-04-09",
+    "extra_seat": 0,
+    "flight_route": "LCG-AAL",
+    "flight_route_return": "AAL-LCG",
+    "flight_type": "round_trip",
+    "passenger_adult_count": 1,
+    "passenger_baby_count": 1,
+    "passenger_child_count": 1,
+    "pnr_countries_visited": "ES-DK",
+    "pnr_total_number_of_passengers": 3,
+    "product_id": "flight",
+    "return_date": "2026-04-09",
+    "route_arrival_departure": "AAL",
+    "route_arrival_return": "LCG",
+    "route_origin_departure": "LCG",
+    "route_origin_return": "AAL",
+    "session_id": "1***",
+    "session_number": "43",
+    "trip_duration_days": 1
+  },
+  "receivedAt": "2026-04-09T11:35:45.760Z",
+  "sentAt": "2026-04-09T11:35:45.556Z",
+  "timestamp": "2026-04-09T11:35:45.386Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 3: Product List Viewed (flights)
+// Página: /booking/selectFlight (Disponibilidad)
+// GA4: view_item_list – flights
+// Descripción: Se dispara cuando se cargan los resultados de
+// vuelos disponibles. Muestra vuelos BCN-LCG (ida) y LCG-BCN
+// (vuelta). Incluye item_list_name y list_id.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/selectFlight",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu vuelo | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/selectFlight"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product List Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775734681527-fa71e2c9-cbec-43c9-8bdc-0aaafc763124",
+  "originalTimestamp": "2026-04-09T11:38:01.527Z",
+  "properties": {
+    "currency": "EUR",
+    "item_list_name": "Flight results BCN-LCG",
+    "list_id": "flight_results",
+    "products": [
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "07:50",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129208052026",
+        "flight_number": "VY1292",
+        "flight_origin_time": "06:00",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 53.09,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "08:40",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY100008052026",
+        "flight_number": "VY1000",
+        "flight_origin_time": "06:50",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 21.09,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "16:30",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129408052026",
+        "flight_number": "VY1294",
+        "flight_origin_time": "14:40",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 21.09,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "20:00",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY100208052026",
+        "flight_number": "VY1002",
+        "flight_origin_time": "18:10",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 21.09,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "22:45",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129008052026",
+        "flight_number": "VY1290",
+        "flight_origin_time": "20:55",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 21.09,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-06-08",
+        "flight_arrival_time": "10:00",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129308062026",
+        "flight_number": "VY1293",
+        "flight_origin_time": "08:15",
+        "journey_type": "return",
+        "name": "L***-B***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 18.99,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "BCN",
+        "route_origin": "LCG"
+      },
+      {
+        "departure_date": "2026-06-08",
+        "flight_arrival_time": "00:55",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129108062026",
+        "flight_number": "VY1291",
+        "flight_origin_time": "23:15",
+        "journey_type": "return",
+        "name": "L***-B***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 18.99,
+        "product_id": "flight",
+        "quantity": 1,
+        "route_arrival": "BCN",
+        "route_origin": "LCG"
+      }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 175.43
+  },
+  "receivedAt": "2026-04-09T11:38:01.818Z",
+  "sentAt": "2026-04-09T11:38:01.657Z",
+  "timestamp": "2026-04-09T11:38:01.688Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 4: Product Clicked (flights)
+// Página: /booking/selectFlight (Disponibilidad)
+// GA4: select_item – flights
+// Descripción: Se dispara cuando el usuario hace clic en un
+// vuelo de la lista. Vuelo seleccionado: VY1292 BCN-LCG
+// (ida).
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/selectFlight",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu vuelo | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/selectFlight"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Clicked",
+  "integrations": {},
+  "messageId": "ajs-next-1775734687869-e2c9cbec-73c9-4bdc-8aaa-fc7631241943",
+  "originalTimestamp": "2026-04-09T11:38:07.869Z",
+  "properties": {
+    "currency": "EUR",
+    "products": [
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "07:50",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129208052026",
+        "flight_number": "VY1292",
+        "flight_origin_time": "06:00",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 53.09,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 106.18
+  },
+  "receivedAt": "2026-04-09T11:38:08.099Z",
+  "sentAt": "2026-04-09T11:38:07.951Z",
+  "timestamp": "2026-04-09T11:38:08.017Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 5: Product Viewed (flights)
+// Página: /booking/selectFlight (Disponibilidad)
+// GA4: view_item – flights
+// Descripción: Se dispara cuando el usuario completa la
+// selección de vuelos y ve el resumen del itinerario. Incluye
+// vuelo de ida VY1292 BCN-LCG y vuelta VY1293 LCG-BCN.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/selectFlight",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu vuelo | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/selectFlight"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775734728172-73c98bdc-0aaa-4c76-b124-19438c75853d",
+  "originalTimestamp": "2026-04-09T11:38:48.172Z",
+  "properties": {
+    "currency": "EUR",
+    "flight_type": "round_trip",
+    "products": [
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "07:50",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129208052026",
+        "flight_number": "VY1292",
+        "flight_origin_time": "06:00",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 53.09,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-06-08",
+        "flight_arrival_time": "10:00",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129308062026",
+        "flight_number": "VY1293",
+        "flight_origin_time": "08:15",
+        "journey_type": "return",
+        "name": "L***-B***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 18.99,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "BCN",
+        "route_origin": "LCG"
+      }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "trip_duration_days": 31,
+    "value": 144.16
+  },
+  "receivedAt": "2026-04-09T11:38:48.469Z",
+  "sentAt": "2026-04-09T11:38:48.284Z",
+  "timestamp": "2026-04-09T11:38:48.357Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 6: Product List Viewed (bundles)
+// Página: /booking/selectFlight (Disponibilidad)
+// GA4: view_item_list – bundle
+// Descripción: Se dispara cuando se muestran las opciones de
+// bundle disponibles para los vuelos seleccionados. Incluye
+// 8 items (4 bundles x 2 segmentos). No incluye item_list_name.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/selectFlight",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu vuelo | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/selectFlight"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        },
+        {
+          "description": "properties.item_list_name is required",
+          "field": "properties.item_list_name",
+          "type": "Required"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product List Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775734729096-8bdc0aaa-fc76-4124-9943-8c75853dc74c",
+  "originalTimestamp": "2026-04-09T11:38:49.096Z",
+  "properties": {
+    "currency": "EUR",
+    "products": [
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "V***", "price": 30, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "V***", "price": 19, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "V***", "price": 37, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "V***", "price": 27, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "V***", "price": 72, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "V***", "price": 37, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "V***", "price": 0, "product_id": "ancillary", "quantity": 1 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "V***", "price": 0, "product_id": "ancillary", "quantity": 1 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 222
+  },
+  "receivedAt": "2026-04-09T11:38:49.520Z",
+  "sentAt": "2026-04-09T11:38:49.182Z",
+  "timestamp": "2026-04-09T11:38:49.434Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 7: Product Clicked (bundles)
+// Página: /booking/selectFlight (Disponibilidad)
+// GA4: select_item – bundle
+// Descripción: Se dispara cuando el usuario selecciona un
+// bundle. Incluye 2 items (1 bundle x 2 segmentos).
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/selectFlight",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu vuelo | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/selectFlight"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Clicked",
+  "integrations": {},
+  "messageId": "ajs-next-1775734774166-0aaafc76-3124-4943-8c75-853dc74cfb37",
+  "originalTimestamp": "2026-04-09T11:39:34.166Z",
+  "properties": {
+    "currency": "EUR",
+    "products": [
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "V***", "price": 37, "product_id": "ancillary", "quantity": 2 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "V***", "price": 27, "product_id": "ancillary", "quantity": 2 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 128
+  },
+  "receivedAt": "2026-04-09T11:39:34.627Z",
+  "sentAt": "2026-04-09T11:39:34.249Z",
+  "timestamp": "2026-04-09T11:39:34.544Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 8: Product Added (bundles + flights)
+// Página: /booking/selectFlight (Disponibilidad)
+// GA4: add_to_cart – bundle
+// Descripción: Se dispara cuando el usuario avanza con "Next"
+// habiendo seleccionado un bundle. Incluye tanto los vuelos
+// como los bundles seleccionados en el mismo array de products.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/selectFlight",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu vuelo | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/selectFlight"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Added",
+  "integrations": {},
+  "messageId": "ajs-next-1775734794541-fc763124-1943-4c75-853d-c74cfb37a0d9",
+  "originalTimestamp": "2026-04-09T11:39:54.541Z",
+  "properties": {
+    "currency": "EUR",
+    "flight_type": "round_trip",
+    "products": [
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "07:50",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129208052026",
+        "flight_number": "VY1292",
+        "flight_origin_time": "06:00",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 53.09,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-06-08",
+        "flight_arrival_time": "10:00",
+        "flight_carrier": "Vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129308062026",
+        "flight_number": "VY1293",
+        "flight_origin_time": "08:15",
+        "journey_type": "return",
+        "name": "L***-B***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 18.99,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "BCN",
+        "route_origin": "LCG"
+      },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "V***", "price": 37, "product_id": "ancillary", "quantity": 2 },
+      { "category": "bundles", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "V***", "price": 27, "product_id": "ancillary", "quantity": 2 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "trip_duration_days": 31,
+    "value": 272.16
+  },
+  "receivedAt": "2026-04-09T11:39:55.057Z",
+  "sentAt": "2026-04-09T11:39:54.636Z",
+  "timestamp": "2026-04-09T11:39:54.962Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 9: Product List Viewed (seats)
+// Página: /booking/seats (Asientos)
+// GA4: view_item_list – seats
+// Descripción: Se dispara cuando carga el mapa de asientos.
+// Incluye 5 categorías de asientos para el vuelo VY1292.
+// No incluye item_list_name.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/seats",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu asiento | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/seats"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        },
+        {
+          "description": "properties.item_list_name is required",
+          "field": "properties.item_list_name",
+          "type": "Required"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product List Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775734858091-8c75853d-c74c-4b37-a0d9-35db4ccd8a77",
+  "originalTimestamp": "2026-04-09T11:40:58.091Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "s*** o***", "price": 50.67, "product_id": "ancillary", "quantity": 6 },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "s*** p***", "price": 45.67, "product_id": "ancillary", "quantity": 18 },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "f*** r***", "price": 0, "product_id": "ancillary", "quantity": 25 },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "s***", "price": 45.67, "product_id": "ancillary", "quantity": 12 },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "b*** r***", "price": 0, "product_id": "ancillary", "quantity": 72 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 1674.12
+  },
+  "receivedAt": "2026-04-09T11:40:59.847Z",
+  "sentAt": "2026-04-09T11:40:58.318Z",
+  "timestamp": "2026-04-09T11:40:59.620Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 10: Product Clicked (seats)
+// Página: /booking/seats (Asientos)
+// GA4: select_item – seats
+// Descripción: Se dispara cuando el usuario hace clic en un
+// asiento del mapa. Asiento seleccionado: 17F, categoría
+// b*** r***, precio 0 (asiento gratuito).
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/seats",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu asiento | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/seats"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Clicked",
+  "integrations": {},
+  "messageId": "ajs-next-1775734875210-853dc74c-fb37-40d9-b5db-4ccd8a77a4e9",
+  "originalTimestamp": "2026-04-09T11:41:15.210Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "b*** r***", "price": 0, "product_id": "ancillary", "quantity": 1, "variant": "17F" }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 0
+  },
+  "receivedAt": "2026-04-09T11:41:15.371Z",
+  "sentAt": "2026-04-09T11:41:15.276Z",
+  "timestamp": "2026-04-09T11:41:15.305Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 11: Product Added (seats)
+// Página: /booking/seats (Asientos)
+// GA4: add_to_cart – seats
+// Descripción: Se dispara cuando el usuario confirma la
+// selección de asientos con "Next". Incluye 4 asientos
+// asignados: 18E y 17F para VY1292, 18E y 18F para VY1293.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/seats",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu asiento | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/seats"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Added",
+  "integrations": {},
+  "messageId": "ajs-next-1775734902055-fb37a0d9-35db-4ccd-8a77-a4e977cee742",
+  "originalTimestamp": "2026-04-09T11:41:42.055Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "b*** r***", "price": 0, "product_id": "ancillary", "quantity": 1, "variant": "18E" },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "b*** r***", "price": 0, "product_id": "ancillary", "quantity": 1, "variant": "17F" },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "b*** r***", "price": 0, "product_id": "ancillary", "quantity": 1, "variant": "18E" },
+      { "category": "seats", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "b*** r***", "price": 0, "product_id": "ancillary", "quantity": 1, "variant": "18F" }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 0
+  },
+  "receivedAt": "2026-04-09T11:41:42.217Z",
+  "sentAt": "2026-04-09T11:41:42.119Z",
+  "timestamp": "2026-04-09T11:41:42.153Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 12: Product List Viewed (baggage – checked luggage)
+// Página: /booking/services (Equipaje)
+// GA4: view_item_list – baggage
+// Descripción: Se dispara cuando carga la pantalla de equipaje
+// facturado. Muestra opciones BG para los 2 vuelos. No incluye
+// item_list_name.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/services",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu equipaje | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/services"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        },
+        {
+          "description": "properties.item_list_name is required",
+          "field": "properties.item_list_name",
+          "type": "Required"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product List Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775734904437-35db4ccd-8a77-44e9-b7ce-e74242bc8a40",
+  "originalTimestamp": "2026-04-09T11:41:44.437Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "B***", "price": 36, "product_id": "ancillary", "quantity": 1 },
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "B***", "price": 17, "product_id": "ancillary", "quantity": 1 },
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "B***", "price": 45, "product_id": "ancillary", "quantity": 1 },
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "B***", "price": 25, "product_id": "ancillary", "quantity": 1 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 123
+  },
+  "receivedAt": "2026-04-09T11:41:45.189Z",
+  "sentAt": "2026-04-09T11:41:44.587Z",
+  "timestamp": "2026-04-09T11:41:45.039Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 13: Product List Viewed (baggage – hand luggage / GCBG)
+// Página: /booking/services (Equipaje)
+// GA4: view_item_list – baggage
+// Descripción: Segunda llamada de view_item_list en la página
+// de equipaje, correspondiente a la categoría de equipaje de
+// mano / GCBG (G***). Muestra opciones para los 2 vuelos.
+// No incluye item_list_name.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/services",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu equipaje | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/services"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        },
+        {
+          "description": "properties.item_list_name is required",
+          "field": "properties.item_list_name",
+          "type": "Required"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product List Viewed",
+  "integrations": {},
+  "messageId": "ajs-next-1775734958940-4ccd8a77-a4e9-47ce-a742-42bc8a40b5f5",
+  "originalTimestamp": "2026-04-09T11:42:38.940Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "G***", "price": 30, "product_id": "ancillary", "quantity": 1 },
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "G***", "price": 15, "product_id": "ancillary", "quantity": 1 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 45
+  },
+  "receivedAt": "2026-04-09T11:42:39.155Z",
+  "sentAt": "2026-04-09T11:42:39.018Z",
+  "timestamp": "2026-04-09T11:42:39.077Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 14: Product Clicked (baggage) – vuelo ida
+// Página: /booking/services (Equipaje)
+// GA4: select_item – baggage
+// Descripción: Se dispara cuando el usuario selecciona una
+// opción de equipaje. Equipaje G*** para vuelo de ida
+// VY1292 (BCN-LCG), precio 30€.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/services",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu equipaje | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/services"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Clicked",
+  "integrations": {},
+  "messageId": "ajs-next-1775734961251-8a77a4e9-77ce-4742-82bc-8a40b5f50e22",
+  "originalTimestamp": "2026-04-09T11:42:41.251Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129208052026", "name": "G***", "price": 30, "product_id": "ancillary", "quantity": 1 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 30
+  },
+  "receivedAt": "2026-04-09T11:42:41.386Z",
+  "sentAt": "2026-04-09T11:42:41.306Z",
+  "timestamp": "2026-04-09T11:42:41.331Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 15: Product Clicked (baggage) – vuelo vuelta
+// Página: /booking/services (Equipaje)
+// GA4: select_item – baggage
+// Descripción: Segunda llamada de select_item en equipaje.
+// Equipaje G*** para vuelo de vuelta VY1293 (LCG-BCN),
+// precio 15€. Se dispara de forma individual por segmento.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/services",
+      "referrer": "",
+      "search": "",
+      "title": "Selecciona tu equipaje | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/services"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Product Clicked",
+  "integrations": {},
+  "messageId": "ajs-next-1775734994960-a4e977ce-e742-42bc-8a40-b5f50e2259d3",
+  "originalTimestamp": "2026-04-09T11:43:14.960Z",
+  "properties": {
+    "currency": "EUR",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "products": [
+      { "category": "baggage", "flight_has_connections": false, "flight_id": "VY129308062026", "name": "G***", "price": 15, "product_id": "ancillary", "quantity": 1 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "value": 15
+  },
+  "receivedAt": "2026-04-09T11:43:15.196Z",
+  "sentAt": "2026-04-09T11:43:15.032Z",
+  "timestamp": "2026-04-09T11:43:15.124Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 16: Payment Info Entered
+// Página: /booking/payment (Pago)
+// GA4: add_payment_info
+// Descripción: Se dispara cuando el usuario hace clic en
+// "pagar". Método de pago: credit_card. Incluye vuelos y
+// bundles en el array de products. Valor total: 357.59€.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/payment",
+      "referrer": "https://skysales-bilbo.vueling.com/booking/payment",
+      "search": "",
+      "title": "Datos del pago | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/payment"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Payment Info Entered",
+  "integrations": {},
+  "messageId": "ajs-next-1775735232303-0d23d4ff-ba7a-4115-93fc-71bf3e93f26c",
+  "originalTimestamp": "2026-04-09T11:47:12.303Z",
+  "properties": {
+    "currency": "EUR",
+    "flight_type": "round_trip",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "payment_method": "credit_card",
+    "products": [
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "07:50",
+        "flight_carrier": "vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129208052026",
+        "flight_number": "VY1292",
+        "flight_origin_time": "06:00",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 53.09,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-06-08",
+        "flight_arrival_time": "10:00",
+        "flight_carrier": "vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129308062026",
+        "flight_number": "VY1293",
+        "flight_origin_time": "08:15",
+        "journey_type": "return",
+        "name": "L***-B***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 18.99,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "BCN",
+        "route_origin": "LCG"
+      },
+      { "category": "bundles", "flight_id": "VY129208052026", "name": "V***", "price": 74, "product_id": "ancillary", "quantity": 2 },
+      { "category": "bundles", "flight_id": "VY129308062026", "name": "V***", "price": 54, "product_id": "ancillary", "quantity": 2 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "trip_duration_days": 31,
+    "value": 357.59
+  },
+  "receivedAt": "2026-04-09T11:47:12.683Z",
+  "sentAt": "2026-04-09T11:47:12.367Z",
+  "timestamp": "2026-04-09T11:47:12.619Z",
+  "type": "track",
+  "userId": null
+}
+
+// ─────────────────────────────────────────────────────────────
+// EVENTO 17: Order Completed
+// Página: /booking/confirmation (Confirmación)
+// GA4: purchase
+// Descripción: Se dispara cuando carga la página de
+// confirmación tras un pago exitoso. order_id: SI9S7H.
+// Incluye vuelos y bundles. tax: 68.44€. Valor total: 357.59€.
+// ─────────────────────────────────────────────────────────────
+{
+  "anonymousId": "a5bc0f6e-fd0a-4d40-b309-9fb7c6fbbdd2",
+  "context": {
+    "campaign": {},
+    "categoryPreferences": {
+      "advertising": true,
+      "analytics": true,
+      "preferences": true
+    },
+    "dclid": "TEST_GADS_DISPLAY",
+    "fbclid": "TEST_FBCLID",
+    "gbraid": "TEST_GBRAID",
+    "gclid": "TEST_GADS_SEARCH",
+    "ip": "2***.1***.1***.7***",
+    "library": {
+      "name": "analytics.js",
+      "version": "next-1.81.0"
+    },
+    "locale": "en-US",
+    "msclkid": "TEST_MICROSOFT_BING",
+    "page": {
+      "path": "/booking/confirmation",
+      "referrer": "https://skysales-bilbo.vueling.com/booking/payment",
+      "search": "",
+      "title": "Confirmación de tu reserva | Vueling",
+      "url": "https://skysales-bilbo.vueling.com/booking/confirmation"
+    },
+    "protocols": {
+      "sourceId": "85J7WzdcpvbNvYnx1Y67ea",
+      "violations": [
+        {
+          "description": "Invalid type. Expected: integer, given: string",
+          "field": "properties.session_number",
+          "type": "Invalid Type"
+        }
+      ]
+    },
+    "timezone": "Europe/Madrid",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/1***.0***.0***.0*** Safari/537.36",
+    "userAgentData": {
+      "brands": [
+        { "brand": "Chromium", "version": "146" },
+        { "brand": "Not-A.Brand", "version": "24" },
+        { "brand": "Google Chrome", "version": "146" }
+      ],
+      "mobile": false,
+      "platform": "macOS"
+    },
+    "wbraid": "TEST_WBRAID_000"
+  },
+  "event": "Order Completed",
+  "integrations": {},
+  "messageId": "ajs-next-1775735237170-ba7ac115-93fc-41bf-be93-f26cb28adae2",
+  "originalTimestamp": "2026-04-09T11:47:17.170Z",
+  "properties": {
+    "currency": "EUR",
+    "flight_type": "round_trip",
+    "hashed_email": "f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a",
+    "order_id": "SI9S7H",
+    "payment_method": "credit_card",
+    "products": [
+      {
+        "departure_date": "2026-05-08",
+        "flight_arrival_time": "07:50",
+        "flight_carrier": "vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129208052026",
+        "flight_number": "VY1292",
+        "flight_origin_time": "06:00",
+        "journey_type": "departure",
+        "name": "B***-L***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 53.09,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "LCG",
+        "route_origin": "BCN"
+      },
+      {
+        "departure_date": "2026-06-08",
+        "flight_arrival_time": "10:00",
+        "flight_carrier": "vueling",
+        "flight_has_connections": false,
+        "flight_id": "VY129308062026",
+        "flight_number": "VY1293",
+        "flight_origin_time": "08:15",
+        "journey_type": "return",
+        "name": "L***-B***",
+        "pnr_countries_visited": "ES-ES",
+        "price": 18.99,
+        "product_id": "flight",
+        "quantity": 2,
+        "route_arrival": "BCN",
+        "route_origin": "LCG"
+      },
+      { "category": "bundles", "flight_id": "VY129208052026", "name": "V***", "price": 74, "product_id": "ancillary", "quantity": 2 },
+      { "category": "bundles", "flight_id": "VY129308062026", "name": "V***", "price": 54, "product_id": "ancillary", "quantity": 2 }
+    ],
+    "session_id": "1***",
+    "session_number": "43",
+    "tax": 68.44,
+    "trip_duration_days": 31,
+    "value": 357.59
+  },
+  "receivedAt": "2026-04-09T11:47:17.746Z",
+  "sentAt": "2026-04-09T11:47:17.442Z",
+  "timestamp": "2026-04-09T11:47:17.474Z",
   "type": "track",
   "userId": null
 }

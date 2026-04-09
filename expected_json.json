@@ -1,6 +1,14 @@
-///////// Started SEGMENT EVENTS
+///////// SEGMENT EVENTS - QA ANNOTATIONS
+// Leyenda:
+// // NOT IN DATALAYER DESKTOP   → ausente en desktop
+// // NOT IN DATALAYER MOBILE    → ausente en mobile
+// // ❌ NO IMPLEMENTADO DESKTOP  → evento no implementado en desktop
+// // ❌ NO IMPLEMENTADO MOBILE   → evento no implementado en mobile
+// // ⚠️ TRIGGER DESCONOCIDO     → no se sabe dónde/cuándo salta
+// // ✅ SOLVENTADO               → problema resuelto
 
-///////// Started HOME
+///////// HOME
+
 // GA4 NAME search_Started
 // SEGMENT NAME Search Started
 // Description: Tracks the Started of a flight search using the selected criteria.
@@ -29,12 +37,22 @@
     "product_id": "item_id",
     "extra_seat": "extra_seat",
     "session_id": "ga_session_id",
-    "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "session_number": "ga_session_number"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -45,21 +63,9 @@
     "epik": "epik",
     "li_fat_id": "li_fat_id",
     "twclid": "twclid"
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
   }
 }
+
 // GA4 NAME view_promotion
 // SEGMENT NAME Promotion Viewed
 // Description: Tracks a promotion impression when it is shown to the user.
@@ -73,12 +79,22 @@
     "name": "promo_name",
     "promo_type": "promo_type",
     "session_id": "ga_session_id",
-    "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "session_number": "ga_session_number"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -89,21 +105,9 @@
     "epik": "epik",
     "li_fat_id": "li_fat_id",
     "twclid": "twclid"
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
   }
 }
+
 // GA4 NAME select_promotion
 // SEGMENT NAME Promotion Clicked
 // Description: Tracks the click or selection of a promotion when the user interacts with it.
@@ -117,12 +121,22 @@
     "name": "promo_name",
     "promo_type": "promo_type",
     "session_id": "ga_session_id",
-    "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "session_number": "ga_session_number"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -133,27 +147,16 @@
     "epik": "epik",
     "li_fat_id": "li_fat_id",
     "twclid": "twclid"
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
   }
 }
+
 ////// END HOME
 
-///// Started AVAILABILITY
+///// AVAILABILITY
+
 // GA4 NAME view_item_list (flights)
 // SEGMENT NAME Flights Product List Viewed
-// Description: Tracks the display of flight results when availability is loaded or refreshed; in desktop it is sent once, and in mobile once per view/segment shown.
+// Description: Tracks the display of flight results when availability is loaded or refreshed.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -163,24 +166,9 @@
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
     "currency": "ecommerce.currency",
-    "list_id": "ecommerce.item_list_id",
-    "item_list_name": "ecommerce.item_list_name",
+    "list_id": "ecommerce.item_list_id",        // NOT IN DATALAYER MOBILE
+    "item_list_name": "ecommerce.item_list_name", // NOT IN DATALAYER MOBILE
     "value": "ecommerce.value",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -198,28 +186,41 @@
         "journey_type": "journey_type",
         "pnr_countries_visited": "country_route",
         "flight_has_connections": "connections",
-        "connection_station_iata": "connection_station_iata",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step"
+        "connection_station_iata": "connection_station_iata", // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",                 // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number",      // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",                 // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step"                          // NOT IN DATALAYER DESKTOP
       }
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME select_item (flights)
 // SEGMENT NAME Flights Item Selected
 // Description: Tracks flight selection when the user clicks an option within the results.
@@ -233,21 +234,6 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -265,31 +251,44 @@
         "journey_type": "journey_type",
         "pnr_countries_visited": "country_route",
         "flight_has_connections": "connections",
-        "connection_station_iata": "connection_station_iata",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step"
+        "connection_station_iata": "connection_station_iata", // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",                 // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number",      // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",                 // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step"                          // NOT IN DATALAYER DESKTOP
       }
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME view_item (flights)
 // SEGMENT NAME Flights Item Viewed
-// Description: Tracks the display of the selected itinerary when the user completes flight selection and sees the trip summary or details.
+// Description: Tracks the display of the selected itinerary when the user completes flight selection.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -302,21 +301,6 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -334,31 +318,45 @@
         "journey_type": "journey_type",
         "pnr_countries_visited": "country_route",
         "flight_has_connections": "connections",
-        "connection_station_iata": "connection_station_iata",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step"
+        "connection_station_iata": "connection_station_iata", // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",                 // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number",      // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",                 // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step"                          // NOT IN DATALAYER DESKTOP
       }
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-// GA4 NAME block_price (flights)
+
+// GA4 NAME block_price
 // SEGMENT NAME Flights Block Price
-// Description: Tracks the click on price lock for a selected fare; desktop only, and referred to as on hold in the PDF.
+// Description: Tracks the click on price lock for a selected fare; desktop only.
+// ⚠️ TRIGGER DESCONOCIDO
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -371,21 +369,6 @@
     "trip_duration_days": "trip_duration",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -407,22 +390,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-// GA4 NAME Delete (flights)
+
+// GA4 NAME Delete
 // SEGMENT NAME Flights Delete
-// Description: Tracks the removal of flights and, when applicable, bundles from the cart when the user deletes the selected option.
+// Description: Tracks the removal of flights and bundles from the cart.
+// ⚠️ TRIGGER DESCONOCIDO
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -435,21 +432,6 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -476,22 +458,35 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME modify_flight
 // SEGMENT NAME Flights Modify
-// Description: Tracks the intent to change already selected flights when the user clicks "modify"; going back does not count as modify_flight.
+// Description: Tracks the intent to change already selected flights when the user clicks "modify".
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -500,8 +495,8 @@
     "hashed_email": "datalayerSourceTBD",
     "flight_type": "flight_type",
     "trip_duration_days": "trip_duration",
-    "value": "value",
-    "currency": "currency",
+    "value": "value",           // NOT IN DATALAYER DESKTOP + MOBILE
+    "currency": "currency",     // NOT IN DATALAYER DESKTOP + MOBILE
     "product_id": "item_id",
     "pnr_countries_visited": "country_route",
     "flight_route": "departure_flight",
@@ -521,12 +516,22 @@
     "departure_connections": "departure_connections",
     "return_connections": "return_connections",
     "session_id": "ga_session_id",
-    "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "session_number": "ga_session_number"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -537,21 +542,9 @@
     "epik": "epik",
     "li_fat_id": "li_fat_id",
     "twclid": "twclid"
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
   }
 }
+
 // GA4 NAME view_item_list (bundle)
 // SEGMENT NAME Product List Viewed
 // Description: Tracks the display of bundles when the available options are shown to the user.
@@ -565,11 +558,38 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -579,39 +599,13 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME select_item (bundle)
 // SEGMENT NAME Product Clicked
-// Description: Tracks bundle selection when the user clicks it; for round trips it may include one item per segment.
+// Description: Tracks bundle selection when the user clicks it.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -622,11 +616,38 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -636,39 +657,13 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME add_to_cart (bundle)
 // SEGMENT NAME Product Added
-// Description: Tracks the addition of bundles to the cart when progressing with "Next", as long as at least one bundle is selected; the PDF presents this as mobile only.
+// Description: Tracks the addition of bundles to the cart when progressing with "Next".
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -679,11 +674,38 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -693,42 +715,18 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
-///// AVAILABILITY END
 
-///// CONTACT SECTION Started
+///// END AVAILABILITY
+
+///// CONTACT SECTION
+
 // GA4 NAME begin_checkout
 // SEGMENT NAME Checkout Started
-// Description: Tracks the Started of checkout when the Passenger Details Page (PDP) loads successfully.
+// Description: Tracks the start of checkout when the Passenger Details Page loads successfully.
+// ❌ NO IMPLEMENTADO DESKTOP
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -741,26 +739,11 @@
     "trip_duration_days": "trip_duration",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
         "name": "item_name",
-        "category": "item_category",
+        "category": "item_category",          // NOT IN DATALAYER MOBILE
         "price": "price",
         "quantity": "quantity",
         "flight_id": "flight_id",
@@ -782,22 +765,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME add_passenger_info
 // SEGMENT NAME Checkout Passenger Info Added
-// Description: Tracks the successful submission of passenger information; in desktop it is sent once for all passengers, and in mobile once per passenger when "Continue" is clicked.
+// Description: Tracks the successful submission of passenger information.
+// ❌ NO IMPLEMENTADO DESKTOP
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -807,12 +804,22 @@
     "special_needs": "special_needs",
     "avios_has_account": "avios_account",
     "session_id": "ga_session_id",
-    "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "session_number": "ga_session_number"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -823,38 +830,37 @@
     "epik": "epik",
     "li_fat_id": "li_fat_id",
     "twclid": "twclid"
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
   }
 }
+
 // GA4 NAME add_contact_info
 // SEGMENT NAME Checkout Contact Info Added
 // Description: Tracks the successful submission of contact information when the user clicks "continue".
+// ❌ NO IMPLEMENTADO DESKTOP
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
   "event": "Checkout Contact Info Added",
   "properties": {
     "hashed_email": "datalayerSourceTBD",
-    "country": "user_country",
+    "country": "user_country",  // NOT IN DATALAYER MOBILE
     "session_id": "ga_session_id",
-    "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "session_number": "ga_session_number"
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -865,27 +871,16 @@
     "epik": "epik",
     "li_fat_id": "li_fat_id",
     "twclid": "twclid"
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
   }
 }
+
 ////// END CONTACT SECTION
 
-//////// SEATS Started
+//////// SEATS
+
 // GA4 NAME view_item_list (seats)
 // SEGMENT NAME Product List Viewed
-// Description: Tracks the display of available seats when the map loads; one view is sent per category and, if there are multiple prices, it uses the average.
+// Description: Tracks the display of available seats when the map loads.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -896,11 +891,38 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -910,39 +932,13 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME select_item (seats)
 // SEGMENT NAME Product Clicked
-// Description: Tracks seat selection when the user clicks a seat or confirms it in the outbound/return modal.
+// Description: Tracks seat selection when the user clicks a seat or confirms it.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -953,11 +949,39 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -967,40 +991,14 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "variant": "item_variant",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME remove_from_cart (seats)
 // SEGMENT NAME Product Removed
-// Description: Tracks the removal of a previously selected seat when the user deselects it on the map; it must preserve seat ID and segment.
+// Description: Tracks the removal of a previously selected seat when the user deselects it.
+// ⚠️ TRIGGER DESCONOCIDO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1011,21 +1009,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1043,22 +1026,35 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME add_to_cart (seats)
 // SEGMENT NAME Product Added
-// Description: Tracks the confirmed addition of seats to the cart when "Next" or "Continue" is clicked, as long as at least one seat has been assigned.
+// Description: Tracks the confirmed addition of seats to the cart when "Next" or "Continue" is clicked.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1069,11 +1065,39 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "variant": "item_variant",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -1083,43 +1107,17 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "variant": "item_variant",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
+
 //// END SEATS
 
-/////// Started BAGGAGE
-// GA4 NAME view_item_list (baggages)
+/////// BAGGAGE
+
+// GA4 NAME view_item_list (baggage)
 // SEGMENT NAME Product List Viewed
-// Description: Tracks the display of baggage options when the interface loads; in desktop it is sent once, and in mobile at least in Hand Luggage and Checked Luggage.
+// Description: Tracks the display of baggage options when the interface loads.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1130,11 +1128,38 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -1144,39 +1169,13 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
-// GA4 NAME select_item (baggages)
+
+// GA4 NAME select_item (baggage)
 // SEGMENT NAME Product Clicked
-// Description: Tracks the selection of a baggage option when the user clicks an available item, such as GCBG, BG20, or BG30.
+// Description: Tracks the selection of a baggage option when the user clicks an available item.
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1187,11 +1186,38 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
+    "products": [
+      {
+        "product_id": "item_id",
+        "name": "item_name",
+        "category": "item_category",
+        "flight_id": "flight_id",
+        "departure_date": "flight_date",           // NOT IN DATALAYER DESKTOP
+        "flight_has_connections": "connections",   // NOT IN DATALAYER MOBILE
+        "flight_route": "airport_pair_order",      // NOT IN DATALAYER DESKTOP
+        "pnr_countries_visited": "country_route",  // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",      // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",              // NOT IN DATALAYER DESKTOP
+        "price": "price",
+        "quantity": "quantity"
+      }
+    ]
+  },
+  "context": {
+    "page": {
+      "path": "page_path",
+      "url": "page_location",
+      "title": "page_title",
+      "referrer": "page_referrer"
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
     "gclid": "gclid",
     "dclid": "dclid",
     "gbraid": "gbraid",
@@ -1201,39 +1227,14 @@
     "msclkid": "msclkid",
     "epik": "epik",
     "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
-    "products": [
-      {
-        "product_id": "item_id",
-        "name": "item_name",
-        "category": "item_category",
-        "flight_id": "flight_id",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
-        "price": "price",
-        "quantity": "quantity"
-      }
-    ]
-  },
-  "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
-    "page": {
-      "path": "page_path",
-      "url": "page_location",
-      "title": "page_title",
-      "referrer": "page_referrer"
-    }
+    "twclid": "twclid"
   }
 }
-// GA4 NAME remove_from_cart (baggages)
+
+// GA4 NAME remove_from_cart (baggage)
 // SEGMENT NAME Product Removed
-// Description: Tracks the removal of baggage when the user returns to the step and deselects a bag that was already added.
+// Description: Tracks the removal of baggage when the user deselects a bag that was already added.
+// ⚠️ TRIGGER DESCONOCIDO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1244,21 +1245,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1275,22 +1261,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-// GA4 NAME add_to_cart (baggages)
+
+// GA4 NAME add_to_cart (baggage)
 // SEGMENT NAME Product Added
-// Description: Tracks the confirmed addition of baggage to the cart when "Next" or "Continue" is clicked, as long as baggage has been selected.
+// Description: Tracks the confirmed addition of baggage to the cart when "Next" or "Continue" is clicked.
+// ❌ NO IMPLEMENTADO DESKTOP
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1301,21 +1301,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1323,6 +1308,7 @@
         "category": "item_category",
         "flight_id": "flight_id",
         "flight_route": "airport_pair_order",
+        "pnr_countries_visited": "country_route",
         "pnr_total_number_of_passengers": "pax_number",
         "flight_category": "flight_category",
         "funnel_step": "funnel_step",
@@ -1332,25 +1318,40 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-///// END BAGGAGES
 
-///// Started SERVICES
-// GA4 NAME view_item_list (SERVICES)
+///// END BAGGAGE
+
+///// SERVICES
+
+// GA4 NAME view_item_list (services)
 // SEGMENT NAME Product List Viewed
-// Description: Tracks the display of the extra services list when that page or module is shown to the user.
+// Description: Tracks the display of the extra services list.
+// ❌ NO IMPLEMENTADO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1363,21 +1364,6 @@
     "value": "ecommerce.value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1405,22 +1391,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-// GA4 NAME view_item (SERVICES)
+
+// GA4 NAME view_item (services)
 // SEGMENT NAME Product Viewed
-// Description: Tracks the display of the detail page for an extra service when the user opens it.
+// Description: Tracks the display of the detail page for an extra service.
+// ❌ NO IMPLEMENTADO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1431,21 +1431,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1459,22 +1444,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME select_item (services)
 // SEGMENT NAME Product Clicked
-// Description: Tracks the selection of an extra service within its product page before confirmation; it must include item_variant when applicable.
+// Description: Tracks the selection of an extra service within its product page before confirmation.
+// ❌ NO IMPLEMENTADO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1485,21 +1484,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1514,22 +1498,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME remove_from_cart (services)
 // SEGMENT NAME Product Removed
-// Description: Tracks the removal of an extra service when the user deselects it and confirms the change; for insurance upsell it must reflect the replacement.
+// Description: Tracks the removal of an extra service when the user deselects it.
+// ⚠️ TRIGGER DESCONOCIDO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1540,21 +1538,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1569,22 +1552,36 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
+
 // GA4 NAME add_to_cart (services)
 // SEGMENT NAME Product Added
-// Description: Tracks the confirmed addition of an extra service to the cart when progressing with "Next" or "Continue", as long as the service remains selected.
+// Description: Tracks the confirmed addition of an extra service to the cart.
+// ❌ NO IMPLEMENTADO (desktop + mobile)
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1595,21 +1592,6 @@
     "value": "value",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1627,24 +1609,39 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
 
-//// PAYMENT Started
+///// END SERVICES
+
+//// PAYMENT
+
 // GA4 NAME add_payment_info
 // SEGMENT NAME Payment Info Entered
-// Description: Tracks the successful submission of payment information when the user clicks "pay now"; for flight credit or Avios it must include the special fields.
+// Description: Tracks the successful submission of payment information when the user clicks "pay now".
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1655,26 +1652,11 @@
     "value": "value",
     "flight_type": "flight_type",
     "trip_duration_days": "trip_duration",
-    "payment_method": "payment_type",
-    "special_payment_type": "special_payment_type", //NOT_FOUND
+    "payment_method": "payment_type",               // ✅ SOLVENTADO
+    "special_payment_type": "special_payment_type", // NOT_FOUND (desktop + mobile)
     "special_payment_amount": "special_payment_amount",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1690,10 +1672,10 @@
         "route_origin": "origin_station_iata",
         "route_arrival": "arrival_station_iata",
         "pnr_countries_visited": "country_route",
-        "flight_route": "airport_pair_order",
-        "pnr_total_number_of_passengers": "pax_number",
-        "flight_category": "flight_category",
-        "funnel_step": "funnel_step",
+        "flight_route": "airport_pair_order",           // NOT IN DATALAYER DESKTOP
+        "pnr_total_number_of_passengers": "pax_number", // NOT IN DATALAYER DESKTOP
+        "flight_category": "flight_category",           // NOT IN DATALAYER DESKTOP
+        "funnel_step": "funnel_step",                   // NOT IN DATALAYER DESKTOP
         "price": "price",
         "quantity": "quantity",
         "flight_has_connections": "connections"
@@ -1701,25 +1683,40 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-///// PAYMENT END
 
-///// CONFIRMATION Started
+//// END PAYMENT
+
+///// CONFIRMATION
+
 // GA4 NAME purchase
 // SEGMENT NAME Order Completed
-// Description: Tracks a successfully completed purchase when the confirmation page loads after a successful payment.
+// Description: Tracks a successfully completed purchase when the confirmation page loads.
+// ✅ SOLVENTADO
 {
   "type": "track",
   "anonymousId": "MandatorySegment",
@@ -1737,21 +1734,6 @@
     "special_payment_amount": "special_payment_amount",
     "session_id": "ga_session_id",
     "session_number": "ga_session_number",
-    "utm_source": "utm_source",
-    "utm_medium": "utm_medium",
-    "utm_campaign": "utm_campaign",
-    "utm_term": "utm_term",
-    "utm_content": "utm_content",
-    "gclid": "gclid",
-    "dclid": "dclid",
-    "gbraid": "gbraid",
-    "wbraid": "wbraid",
-    "fbclid": "fbclid",
-    "ttclid": "ttclid",
-    "msclkid": "msclkid",
-    "epik": "epik",
-    "li_fat_id": "li_fat_id",
-    "twclid": "twclid",
     "products": [
       {
         "product_id": "item_id",
@@ -1778,19 +1760,30 @@
     ]
   },
   "context": {
-    "categoryPreferences": {
-      "advertising": true,
-      "analytics": true,
-      "preferences": true
-    },
     "page": {
       "path": "page_path",
       "url": "page_location",
       "title": "page_title",
       "referrer": "page_referrer"
-    }
+    },
+    "campaign": {
+      "source": "utm_source",
+      "medium": "utm_medium",
+      "name": "utm_campaign",
+      "term": "utm_term",
+      "content": "utm_content"
+    },
+    "gclid": "gclid",
+    "dclid": "dclid",
+    "gbraid": "gbraid",
+    "wbraid": "wbraid",
+    "fbclid": "fbclid",
+    "ttclid": "ttclid",
+    "msclkid": "msclkid",
+    "epik": "epik",
+    "li_fat_id": "li_fat_id",
+    "twclid": "twclid"
   }
 }
-//// CONFIRMATION END
 
-/////////////EVENTS END
+//// END CONFIRMATION
